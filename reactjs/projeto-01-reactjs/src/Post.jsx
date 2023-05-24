@@ -1,4 +1,10 @@
-function Post() { 
-  return <h1>Hello Post</h1>
+/* eslint-disable react/prop-types */
+export function Post(props) {
+  return(
+    <div>
+      <strong>{props.author}</strong>
+      <p>{props.content}</p>
+    </div>
+  )
+  
 }
-export default Post
